@@ -47,6 +47,6 @@ L'application propose les fonctionnalités suivantes :
 
 ## Auteurs
 
-- [sellam badia](lien_vers_profil_github_1)
-- [Nom de l'auteur 2](lien_vers_profil_github_2)
-- [Nom de l'auteur 2](lien_vers_profil_github_2)
+- Badia Sellam
+- Joelle Audet
+- Mélanie Baril
