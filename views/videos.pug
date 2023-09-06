@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Liste des vidéos
+    // Inclure les fichiers Bootstrap CSS
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+  body
+    a(href="/ajouter-video")
+      h3(style="color: red; float: right; margin-right: 20px;") Télécharger un nouveau vidéo
+  .container.justify-content-center.align-items-center    
+    h1 Liste des vidéos
+    ul
+      each video in videos
+        li
+          a(href=`/video/${video.id}`)
+            h2= video.titre
+          p Catégorie: #{video.categorie}            
+          p Description: #{video.description}
+          a.btn.btn-outline-danger.btn-sm(href=`/delete-video/${video.id}`, role='button') Supprimer
+    // Inclure les fichiers Bootstrap JavaScript (jQuery est requis)
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")

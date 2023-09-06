@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    title Upload de vidéos
+    // Inclure les fichiers Bootstrap CSS
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+  body
+  
+    a(href="/videos")
+      h3(style="color: red; float: right; margin-right: 20px;") Voir la liste des vidéos
+  .container.justify-content-center.align-items-center
+    form.mt-3(action="/videos", method="post", enctype="multipart/form-data")
+      h2 Téléchargement de vidéo 
+      //- Name input
+      div.col-md-12
+        input.form-control.mt-3(id="disableField",type='text', name="titre", placeholder='Titre', required)
+
+
+      //- choix category
+      div.col-md-12
+        select.form-select.form-control.mt-3( id="disableField", aria-label="Default select example", name="categorie", class="form-label", required)
+          option(selected) Catégories
+          option(value="Guerre") Guerre
+          option(value="Histoire") Histoire
+          option(value="Action") Action        
+
+      //- Description input
+      div.col-md-12    
+        textarea.form-control.mt-3(id="disableField", name="description", rows='4', placeholder='Description', required)
+
+      //- charger le video 
+      div.col-md-12  
+        input.form-control.mt-3(id="disableField", type="file", name="video", accept="video/mp4", required)
+      //- Submit button
+      div.col-md-12
+        div.d-inline-block
+          button.btn.btn-outline-primary.mb-4.mt-3(id="disableField", type='submit') Télécharger
+        div.d-inline-block.ml-2
+          a.btn.btn-outline-danger.mb-4.mt-3(id="disableField", href='/ajouter-video', role='button') Effacer
+
+    // Inclure les fichiers Bootstrap JavaScript (jQuery est requis)
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+
+
+
+
+
+
