@@ -41,9 +41,9 @@ L'application propose les fonctionnalités suivantes :
 
 ## Captures d'écran
 
-[Insérez ici des captures d'écran de votre application pour montrer son apparence et son fonctionnement.]
-![Amazon S3 bucket ](image.png)
-![data-base mongodb videos](image-1.png)
+
+![Amazon S3 bucket ]((image-1.png))
+![data-base mongodb videos]((image-2.png))
 
 ## Auteurs
 
