@@ -22,10 +22,10 @@ const upload = multer({ storage: storage });
 router.get('/videos', videoList);
 
 // creer une nouveau video
-router.post('/videos', upload.single('video'), createNewVideo);
+router.post('/videos/upload', upload.single('video'), createNewVideo);
 
 // Stream a video
-router.get('/video/:id', streamVideo);
+router.get('/videos/stream/:id', streamVideo);
 
 // delete a video
 router.get('/delete-video/:id', deleteVideo);

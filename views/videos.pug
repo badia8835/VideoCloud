@@ -14,7 +14,7 @@ html(lang="en")
     ul
       each video in videos
         li
-          a(href=`/video/${video.id}`)
+          a(href=`/videos/stream/${video.id}`)
             h2= video.titre
           p Catégorie: #{video.categorie}            
           p Description: #{video.description}
